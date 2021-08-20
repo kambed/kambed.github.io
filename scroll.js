@@ -1,4 +1,5 @@
 var prevScrollpos = Infinity;
+alert(window.innerWidth)
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
