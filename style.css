@@ -1,13 +1,21 @@
 body{
-    margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 #background{
-  background-image:url(2829.jpg);
-  background-size:cover;
+  background-image:url(background.jpg);
+  background-size: cover;
   background-repeat:no-repeat;
+  background-position: center;
 }
-#underbg{
-  background: linear-gradient(to right,#0F0015 25%,#23165C);
+@media screen and (min-width: 1101px) { 
+  #underbg{
+    background: linear-gradient(to right,#0F0015,#23165C,#0F0015);
+  }
+}
+@media screen and (max-width: 1100px) {  
+  #underbg{
+    background: linear-gradient(to right,#150536 10%,#23165C 35%,#23165C 65%,#150536 90%);
+  }
 }
 
 #centerText h1{
