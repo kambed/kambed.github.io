@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Snowburst+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id=background>
+    <div id=background class="background">
         <div id="topMenu">
             <div id="logo">
                 <a href="#background"><img src="logo.png"></a>
@@ -25,36 +26,61 @@
                 <span></span>
             </div>
             <ul id="menu">
-                <li><a href="#background" class="topMenuIcon">HOME</a></li>
-                <li><a href="" class="topMenuIcon">INFORMATIONS</a></li>
-                <li><a href="https://kambed.github.io/kontakt.html" class="topMenuIcon">CONTACT</a></li>
-                <li><a href="https://discord.gg/8S9dAJG" class="topMenuIcon">DISCORD</a></li>
+                <li><a href="#background" class="topMenuIcon"><i class="fa fa-home"></i> HOME</a></li>
+                <li><a href="#about" class="topMenuIcon"><i class="fa fa-info-circle"></i> ABOUT</a></li>
+                <li><a href="#contact" class="topMenuIcon"><i class="fa fa-envelope"></i> CONTACT</a></li>
             </ul>
         </div>
-
-        <div class="typewriter" id="centerText">
+        <div id="centerText">
             <h1>KAMBED</h1>
-            <h2>C/C++,Java,JavaScript,HTML,CSS</h2>
+            <h2 class="typewrite" data-period="2000" data-type='[ "C/C++.", "Java.", "JavaScript.", "HTML.", "CSS." ]'></h2>
         </div>
-        <div id="section05" class="demo">
-            <a href="#copyright"><span></span>Scroll</a>
+        <a href="#about" id="scrollButton"><span></span>Scroll</a>
+    </div>
+    <div id="about" class="background">
+        <div class="title">
+            <span>A</span>
+            <span>B</span>
+            <span>O</span>
+            <span>U</span>
+            <span>T</span>
         </div>
-        <div id="under">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="content">
+            <ul>
+                
+            </ul>
+        </div>
+        <a href="#contact" id="scrollButton"><span></span>Scroll</a>
+    </div>
+    <div id="contact" class="background">
+        <div class="title">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>T</span>
+            <span>A</span>
+            <span>C</span>
+            <span>T</span>
+        </div>
+        <div class="content">
+            <ul>
+                <li><i class="fa fa-envelope"></i> kamil.bednarek.2001@gmail.com<br></li>
+                <li><i class="fa fa-microphone"></i><a href="https://discord.gg/8S9dAJG"> Discord: kambed#0307</a><br></li>
+                <li><i class="fa fa-facebook"></i><a href="https://www.facebook.com/kamil.bednarek.1466/">  Kamil Bednarek</a><br></li>
+                <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/kambed111"> kambed111</a><br></li>
+                <li><i class="fa fa-youtube"></i><a href="https://www.youtube.com/channel/UCtyASBAuWBozX3kD4pU5qKA"> kambed</a></li>
+            </ul>
         </div>
     </div>
-    <div id="underbg">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div id="copyright">
-            <hr>
-            <h5>
-                © 2021 - Kamil Bednarek | Wszelkie prawa zastrzeżone <br> 
-                Code and design by <a href="kambed.github.io">kambed</a> <br>
-                Background by <a href='https://www.freepik.com/vectors/nature'>Nature vector created by upklyak - www.freepik.com</a>
-            </h5>
-        </div>
+    <div id="copyright" class="background">
+        <h5>
+            © 2021 - Kamil Bednarek | All rights reserved <br> 
+            Code and design by <a href="kambed.github.io">kambed</a> <br>
+            Background by <a href='https://www.freepik.com/vectors/nature'>Nature vector created by upklyak - www.freepik.com</a>
+        </h5>
     </div>
     <script src="scroll.js"></script>
-    <script src="scrollAnimation.js"> </script>
+    <script src="scrollAnimation.js"></script>
+    <script src="typewriter.js"></script>
 </body>
 </html>
