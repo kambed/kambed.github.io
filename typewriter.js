@@ -32,21 +32,6 @@ TxtType.prototype.tick = function() {
     this.isDeleting = false;
     this.loopNum++;
     delta = 500;
-    if(this.loopNum%5==0){
-        document.getElementById("logoContainer").style.backgroundImage='url("logoCPP.png")';
-    }
-    if(this.loopNum%5==1){
-        document.getElementById("logoContainer").style.backgroundImage='url("logoJAVA.png")';
-    }
-    if(this.loopNum%5==2){
-        document.getElementById("logoContainer").style.backgroundImage='url("logoJS.png")';
-    }
-    if(this.loopNum%5==3){
-        document.getElementById("logoContainer").style.backgroundImage='url("logoHTML.png")';
-    }
-    if(this.loopNum%5==4){
-        document.getElementById("logoContainer").style.backgroundImage='url("logoCSS.png")';
-    }
     }
     setTimeout(function() {
     that.tick();
