@@ -9,6 +9,22 @@ var TxtType = function(el, toRotate, period) {
 };
 
 TxtType.prototype.tick = function() {
+    if(this.loopNum%5==0){
+        document.getElementById("languagesLogos").src= "logoCPP.png"
+    }
+    if(this.loopNum%5==1){
+        document.getElementById("languagesLogos").src= "logoJAVA.png"
+    }
+    if(this.loopNum%5==2){
+        document.getElementById("languagesLogos").src= "logoJS.png"
+    }
+    if(this.loopNum%5==3){
+        document.getElementById("languagesLogos").src= "logoHTML.png"
+    }
+    if(this.loopNum%5==4){
+        document.getElementById("languagesLogos").src= "logoCSS.png"
+    }
+    document.getElementById("languagesLogos").style.opacity = "1";
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
@@ -31,9 +47,9 @@ TxtType.prototype.tick = function() {
     } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     this.loopNum++;
+    document.getElementById("languagesLogos").style.opacity = "0";
     delta = 500;
     }
-
     setTimeout(function() {
     that.tick();
     }, delta);
