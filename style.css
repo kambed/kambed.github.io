@@ -141,21 +141,20 @@ body,html{
   margin: 5px;
   position: relative;
   height: 400px;
-  width: 250px;
+  width: 300px;
   border: 5px solid white;
   border-radius: 20px;
   background-color: rgb(255,255,255,0.5);
   overflow: hidden;
   padding: 5px 5px 5px 5px;
 }
-.box img{
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  height: 200px;
-  transition: opacity 0.2s linear; 
+#logoContainer{
+  height: 220px;
+  background-image: url(logoCPP.png);
+  background-size: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s linear;
 }
 .boxText{
   position: absolute;
