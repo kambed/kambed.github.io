@@ -47,6 +47,13 @@ TxtType.prototype.tick = function() {
     if(this.loopNum%5==4){
         document.getElementById("logoContainer").style.backgroundImage='url("logoCSS.png")';
     }
+
+    if(this.loopNum%2==0){
+        document.getElementById("logoContainerTechno").style.backgroundImage='url("logoNode.png")';
+    }
+    if(this.loopNum%2==1){
+        document.getElementById("logoContainerTechno").style.backgroundImage='url("logoGIT.png")';
+    }
     }
     setTimeout(function() {
     that.tick();

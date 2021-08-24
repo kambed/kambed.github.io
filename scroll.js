@@ -8,3 +8,14 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+if(window.innerWidth<=499){
+  document.getElementById("email").innerHTML = "kamil.bednarek.2001 @gmail.com";
+}
+window.onresize = function() {
+  if(window.innerWidth<=499){
+    document.getElementById("email").innerHTML = "kamil.bednarek.2001 @gmail.com";
+  }else{
+    document.getElementById("email").innerHTML = "kamil.bednarek.2001@gmail.com";
+  }
+}
