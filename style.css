@@ -162,6 +162,9 @@ body,html{
   background-repeat: no-repeat;
   transition: background-image 0.5s linear;
 }
+#logoContainerTechno{
+  background-image: url(logoNode.png);
+}
 .boxText{
   position: absolute;
   text-align: center;
